@@ -98,3 +98,5 @@ nwjc.exe
 payload.exe
 
 # End of https://www.gitignore.io/api/node,nwjs
+
+dist
