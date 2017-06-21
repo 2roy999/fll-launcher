@@ -52,5 +52,4 @@ COPY windows/setup/* /installer/
 WORKDIR /installer
 
 RUN rm -rf /tmp/.wine-0/
-RUN ls -la /bundle/app/package.nw
 RUN wine ../innosetup/ISCC.exe main.iss
