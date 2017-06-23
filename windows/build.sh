@@ -14,6 +14,6 @@ docker build \
     .
 
 CONTAINER="$(docker run -d windows-installer)"
-mkdir -p dist/windows
-docker cp "${CONTAINER}":/installer/Output/setup.exe dist/windows
+mkdir -p dist
+docker cp "${CONTAINER}":/installer/Output/setup.exe dist
 docker rm "${CONTAINER}" 2>/dev/null || true
