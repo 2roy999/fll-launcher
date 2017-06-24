@@ -11,6 +11,7 @@ AppVersion=0.1
 DefaultDirName=C:\FLL_ScoringSystem
 ArchitecturesAllowed=x64
 ArchitecturesInstallIn64BitMode=x64
+DisableProgramGroupPage=yes
 
 [Components]
 Name: "Basic"; Description: "Basic installation" ; Types: full custom; Flags: fixed
@@ -28,6 +29,10 @@ Source: "{#virtualBoxCommon}"; DestDir: "{app}\installers"; Components: "Basic";
 Source: "{#virtualBoxMsi}"; DestDir: "{app}\installers"; DestName: "virtualbox.msi"; Components: "Basic";
 Source: "{#b2dIsoPath}"; DestDir: "{app}"; Flags: ignoreversion; Components: "Basic";
 Source: "{#nwjsApp}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: "Basic";
+
+[Icons]
+Name: "{commondesktop}\FIRST LEGO League Scoring"; Filename: "{app}\nw.exe"
+Name: "{commonprograms}\FIRST LEGO League Scoring"; Filename: "{app}\nw.exe"
 
 [Run]
 
