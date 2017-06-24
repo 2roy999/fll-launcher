@@ -11,6 +11,7 @@ steps:
       - NWJS_VERSION=0.23.3
   deploy:
     title: 'Deploying setup to S3'
+    type: composition
     composition:
       version: '2'
       services:
