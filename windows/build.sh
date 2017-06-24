@@ -2,7 +2,7 @@
 
 set -e
 
-DIR="$(dirname $( cd "$( dirname "$0" )" && pwd ) )"
+cd "$(dirname $( cd "$( dirname "$0" )" && pwd ) )"
 
 docker build \
     -t windows-installer \
