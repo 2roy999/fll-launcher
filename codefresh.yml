@@ -16,8 +16,8 @@ steps:
       services:
         windows_setup:
           image: ${{build}}
-        volumes:
-          - dist:/installer/Output/
+          volumes:
+            - dist:/installer/Output/
       volumes:
         dist:
     composition_candidates:
