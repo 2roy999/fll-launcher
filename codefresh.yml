@@ -1,6 +1,7 @@
 version: '1.0'
 steps:
   build:
+    type: build
     title: 'Building Setup File'
     image_name: windows-setup
     dockerfile: windows/Dockerfile
@@ -10,8 +11,8 @@ steps:
       - VBOX_REV=115126
       - NWJS_VERSION=0.23.3
   deploy:
-    title: 'Deploying setup to S3'
     type: composition
+    title: 'Deploying setup to S3'
     composition:
       version: '2'
       services:
