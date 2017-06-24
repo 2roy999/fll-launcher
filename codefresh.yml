@@ -26,7 +26,7 @@ steps:
       deploy:
         image: mesosphere/aws-cli
         command: >
-          s3 cp /dist/setup.exe s3://fll-scoring-launcher/FLL-scoring-setup_${{CF_BUILD_TIMESTAMP}}.exe
+          s3 cp /dist/setup.exe s3://fll-scoring-launcher/FLL-scoring-setup.exe
           --acl public-read
         volumes:
           - dist:/dist
