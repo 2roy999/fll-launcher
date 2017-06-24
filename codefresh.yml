@@ -9,7 +9,7 @@ steps:
       - DOCKER_VERSION=17.06.0-ce-rc2
       - VBOX_VERSION=5.1.22
       - VBOX_REV=115126
-      - NWJS_VERSION=0.23.3
+      - NWJS_VERSION=0.23.4
   deploy:
     type: composition
     title: 'Deploying setup to S3'
