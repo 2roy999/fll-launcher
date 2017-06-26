@@ -1,4 +1,8 @@
 {
-  "name": "FIRST LEGO League - Scoring System",
-  "main": "index.html"
+  "name": "fll-scoring-launcher",
+  "main": "app/index.html",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "virtualbox": "git://github.com/2roy999/node-virtualbox.git#master"
+  }
 }
